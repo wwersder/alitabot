@@ -7,16 +7,14 @@
 body {
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;  /* Центрируем содержимое по вертикали */
+    display: block; /* Используем block вместо flex */
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
     padding: 20px;
+    text-align: center; /* Центрируем весь текст и изображения */
 }
 
 .container {
-    text-align: center;
     padding: 2.5rem;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.1);
@@ -25,19 +23,16 @@ body {
     width: 90%;
     max-width: 500px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;  /* Центрируем содержимое внутри контейнера */
+    margin: 0 auto; /* Центрируем контейнер */
 }
 
 .profile-icon {
     width: 90px;
     height: 90px;
-    margin-bottom: 1.5rem;
+    margin: 0 auto 1.5rem auto; /* Центрируем изображение */
     border-radius: 50%;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    display: inline-flex; /* Изменяем с flex на inline-flex */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
@@ -45,10 +40,10 @@ body {
 }
 
 .profile-icon img {
-    width: 100%; /* Сделаем изображение растянутым по кругу */
+    width: 100%;
     height: 100%;
     border-radius: 50%;
-    object-fit: cover; /* Это обеспечит, что картинка не выйдет за круг */
+    object-fit: cover;
 }
 
 h1 {
