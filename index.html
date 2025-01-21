@@ -6,13 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alita Bot</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Ждём загрузки страницы, чтобы подставить аватарку
+        window.onload = function() {
+            // Получаем параметры из URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const userPhoto = urlParams.get('photo'); // Извлекаем параметр 'photo' из URL
+
+            // Если ссылка на аватарку есть, подставляем её в img
+            if (userPhoto) {
+                document.querySelector('.profile-icon').src = userPhoto;
+            }
+        };
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="welcome">
+            <!-- Это изображение будет заменено на аватарку пользователя -->
             <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Профиль" class="profile-icon">
             <h1>Добро пожаловать в Alita Bot!</h1>
-            <p>Здесь вы можете управлять своим игровым профилем, отслеживать достижения и многое другое!</p>
+            <p>Это бета версия приложения, потому что разработчику нехуй делать!</p>
             <button id="profile">Перейти в профиль</button>
         </div>
     </div>
