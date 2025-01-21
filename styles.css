@@ -6,15 +6,17 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    height: 100vh;
+    min-height: 100vh; /* Заменить height на min-height */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Сместить контент вверх */
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
+    padding: 20px; /* Для отступов сверху */
 }
 
 .container {
+    margin-top: 50px; /* Увеличить отступ сверху, если нужно */
     text-align: center;
     padding: 2.5rem;
     border-radius: 20px;
