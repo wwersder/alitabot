@@ -1,0 +1,74 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #1b1b1b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1532520740545-c74fe1f8e77b?fit=crop&w=500&h=500&ixid=MnwzNjEwNjN8MHx0b3B8MHx8Y2VsaW5nfHx8fHwxNjg2NTg0NTM4&ixlib=rb-1.2.1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+
+.welcome p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    background: #ff3366;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(255, 51, 102, 0.5);
+}
+
+.fas {
+    font-size: 3em;
+    color: #fff;
+}
+
+button {
+    background: linear-gradient(90deg, rgba(255, 51, 102, 1) 0%, rgba(255, 168, 168, 1) 100%);
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgba(255, 168, 168, 1) 0%, rgba(255, 51, 102, 1) 100%);
+    transform: scale(1.1);
+}
