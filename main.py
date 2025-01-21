@@ -10,7 +10,7 @@ router = Router()
 async def start(message: Message):
     markup = ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text='zaxodi', web_app=WebAppInfo(url='https://solvd.com'))]
+            [KeyboardButton(text='zaxodi', web_app=WebAppInfo(url='https://wwersder.github.io/alitabot/index.html'))]
         ],
         resize_keyboard=True
     )
