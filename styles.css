@@ -37,11 +37,18 @@ body {
     margin-bottom: 1.5rem;
     border-radius: 50%;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    display: flex;
+    display: inline-flex; /* Изменяем с flex на inline-flex */
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     color: white;
+}
+
+.profile-icon img {
+    width: 100%; /* Сделаем изображение растянутым по кругу */
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover; /* Это обеспечит, что картинка не выйдет за круг */
 }
 
 h1 {
